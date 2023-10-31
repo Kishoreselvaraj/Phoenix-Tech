@@ -6,6 +6,16 @@
     <title>Phoenix Tech</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
 </head>
 <body>
     <div class="bg-container">
@@ -13,10 +23,10 @@
             <nav class="navbar">
                 <img class="Logo" src="./Photos/Logo Orginal.png" alt="Phoenix Tech Logo" height="250" width="280">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="">Company</a></li>
-                    <li class="nav-item"><a href="#">Why Us</a></li>
-                    <li class="nav-item"><a href="#">Projects</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#section4">Company</a></li>
+                    <li class="nav-item"><a href="#section3">Why Us</a></li>
+                    <li class="nav-item"><a href="#section5">Projects</a></li>
+                    <li class="nav-item"><a href="#footer-container">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -83,7 +93,7 @@
 </div>
 </section>
 <footer>
-    <div class="footer-container">
+    <div id="footer-container">
         <div class="socialicons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
