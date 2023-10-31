@@ -1,0 +1,200 @@
+body{
+    margin: 30px;
+    background-color: black;
+}
+.comp_logo{
+    margin-top: -10px;
+    width: 200px;
+    display: flex;
+    float: right;
+}
+p{
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 23px;
+}
+.founder{
+    padding-top: 150px;
+    font-weight: 900;
+    margin-bottom: -40px;
+}
+
+.content{
+    font-size: 20px;
+    margin-bottom: -130px;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.our{
+    font-size: 20px;
+    margin-bottom: -130px;
+    text-indent: 25px;
+    text-align: justify;
+    margin-bottom: -200px;
+}
+.our-journey{
+    font-weight: 900;
+    margin-bottom: -60px;
+}
+.our-approach{
+    font-weight: 900;
+    margin-bottom: -60px;
+}
+.get-in-touch{
+    font-weight: 900;
+    margin-bottom: -60px;
+    margin-top: -60px;
+}
+.get{
+    font-size: 20px;
+    text-indent: 25px;
+    text-align: justify;
+    margin-bottom: -130px;
+}
+.found{
+    margin-top: 30px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 400px;
+}
+.name{
+    font-weight: 900;
+    justify-content: center;
+}
+.designation{
+    margin-top: -70px;
+    margin-bottom: -100px;
+    justify-content: center;
+}
+.back_page_logo{
+    width: 100px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+@media (min-width:639px) and (max-width:1024px){
+    .content{
+        margin-bottom: -120px;
+    }
+    .our-journey{
+        font-weight: 900;
+    }
+    .our-approach{
+        font-weight: 900;
+        margin-top: 50px;
+    }
+    .get-in-touch{
+        font-weight: 900;
+        margin-top: 75px;
+    }
+    .get{
+        margin-bottom: -70px;
+    }
+}
+@media (min-width:1025px) and (max-width:1280px){
+    .content{
+        margin-bottom: -120px;
+    }
+    .our-journey{
+        font-weight: 900;
+    }
+    .our-approach{
+        font-weight: 900;
+        margin-top: 50px;
+    }
+    .get-in-touch{
+        font-weight: 900;
+        margin-top: 120px;
+    }
+    .get{
+        margin-bottom: -70px;
+    }
+}
+@media (max-width:412px){
+    .about{
+        padding-top: 15px;
+    }
+    .comp_logo{
+        width: 150px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .founder{
+        padding-top: 80px;
+    }
+    .content{
+        margin-top: 0px;
+        font-size: 16px;
+        margin-bottom: -130px;
+    }
+    .our-journey{
+        font-weight: 900;
+    }
+    .our-approach{
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: -35px;
+    }
+    .our{
+        font-size: 16px;
+        margin-bottom: -240px;
+    }
+    .get-in-touch{
+        margin-top: 80px;
+        margin-bottom: -35px;
+        font-weight: 900;
+    }
+    .get{
+        font-size: 16px;
+        margin-bottom: -70px;
+    }
+    .found{
+        width: 200px;
+        margin-top: -110px;
+    }
+    .designation{
+        margin-top: -50px;
+    }
+    .back_page_logo{
+        width: 60px;
+    }
+}
+@media (max-width:360px){
+    .about{
+        padding-top: 25px;
+    }
+    .our{
+        margin-bottom: -280px;
+    }
+    .get{
+        padding-bottom: -90px;
+    }
+    .found{
+        margin-top: -70px;
+    }
+}
+@media (max-width:810px){
+    .about{
+        margin-top: -40px;
+    }
+    .our-approach{
+        margin-top: -20px;
+    }
+    .get-in-touch{
+        margin-top: 35px;
+    }
+    .found{
+        margin-top: -100px;
+    }
+}
+/*.content{
+    font-size: 20px;
+    margin-bottom: -80px;
+    text-indent: 25px;
+    text-align: justify;
+}*/
