@@ -187,3 +187,59 @@ footer{
     font-weight: 400;
     
 }
+@media (max-width :1300px){
+.img2,.img3{
+    display: flex;
+    width: 580px;
+    height: 500px;
+    padding-top: 20px;
+  }  
+  #section3{
+    padding-top: 30px;
+    margin: 20px;
+    padding-bottom: 30px;
+  }
+  .para2{
+    margin: 20px;
+  }
+  .contant{
+    padding-left: 40px;
+}
+}
+@media (max-width:1024px){
+    .img2,.img3{
+    display: flex;
+    width: 450px;
+
+    }
+#section3{
+   
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+}
+.contant{
+    padding-left: 40px;
+}
+
+}
+@media (max-width:900px){
+    .img2,.img3{
+        display: flex;
+        width: 380px;
+    }
+    body{
+        font-size: 16px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .para2{
+        
+        margin: 50px;
+        text-align: center;
+    }
+    .section3{
+        padding-right: 40px;
+    }
+}
