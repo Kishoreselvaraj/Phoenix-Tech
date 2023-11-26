@@ -23,15 +23,12 @@ body{
 }
 #section4{
     height: 80vh;
-    background-color: #000000;
+    
 }
 
 #section5{
     height: 100vh;
 }
-
-
-
 .bg-container{
 background: url('/Photos/1st\ &\ 2nd\ page.jpg');
 background-size: 100% 100%;
@@ -43,19 +40,13 @@ background-size: 100% 100%;
      justify-content: space-between;
 }
 
+
 .Logo{
     width: 200px;
 }
 
-@media (max-width: 250px) {
-    .Logo{
-        width: 150px;
-    }
-}
-
 .nav-list{
     display: flex;
-
     font-size: 20px;
     align-items: center;
 }
@@ -202,6 +193,22 @@ footer{
     font-weight: 400;
     
 }
+.checkbtn{
+    font-size: 30px;
+    color: #f9f6f6;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.Logo{
+    
+    width: 150px;
+}
 @media (max-width :1300px){
 .img2,.img3{
     display: flex;
@@ -341,4 +348,42 @@ footer{
         padding: 10px 20px 20px 10px;
         margin: 10px;
     }
+   .checkbtn{
+    display: block;
+    float: right;
+   }
+   .nav-item{
+    display: none;
+   }
+   .Logo{
+    padding-right: 280px;
+   }
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    top:80px;
+    left: -100;
+    
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   }
+   a{
+    text-align: center;
+   }
+   nav ul li a{
+    font-size: 20px;
+  
+   }
+   a:hover,a.active{
+    background: none;
+    color: #f2f2f2;
+   }
+   #check:dhecked~ul{
+    left: 0;}
 }
