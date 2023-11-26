@@ -17,7 +17,8 @@ body{
 #section3{
     height: 55vh;
     background-image: url(./Photos/footer.jpg);
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 #section4{
@@ -255,15 +256,89 @@ footer{
     }
     .section3{
         padding-right: 40px;
+        padding-left: 10px;
     }
 }
+@media (max-width:900px){
+    .img2,.img3{
+        display: flex;
+        width: 280px;
+       }
+
+}
 @media (max-width:400px){
-    .section1{
-        background-image: url(./Photos/1st\ &\ 2nd\ page.jpg);
+    .bg-container{
+        background-image: url(./Photos/Moblie/Mobile\ view\ first\ page.png);
         background-size:fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        
+        font-size: large;
+    }
+    .img2,.img3{
+        display: flex;
+        width: 179px;
+        height: 250px;
+        padding-top: 60px;
+    }
+    p,h3{
+        font-size: 10px;
+        text-align: start;
+    }
+    #section1{
+        height: 80vh;
+    }
+    
+    #section2{
+        height: 45vh;
+        text-align: start;
+        padding-left: 10px;
+       
+    }
+    #section3{
+        height: 20vh;
+        background-image: url(./Photos/footer.jpg);
+        background-size: 100% 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        margin: 10px;
+  }
+    
+    
+    #section4{
+        height: 50vh;
+        background-color: #000000;
+        text-align: start;
+    }
+    
+    #section5{
+        height: 40vh;
+    }
+    .whyus{
+        padding-left: 10px;
+        padding-top: 0px;
+    }
+    .Client{
+        margin: 30px;
+    }
+    .contant{
+        padding-left: 10px;
+    }
+    .para2{
+    margin: 10px;
+    text-align: start;
+    }
+    .para3{
+
+    padding-top: 25%;
+    margin: 20px;
+    line-height: 15px;}
+    #footer-container{
+    font-size: 10px;
+    }
+    .footernav ul li a {
+        padding: 10px 20px 20px 10px;
+        margin: 10px;
     }
 }
