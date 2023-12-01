@@ -12,19 +12,26 @@
 <body>
     <div class="bg-container">
         <section id="section1">
-            <nav class="navbar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <img class="Logo" src="./Photos/Logo Orginal.png" alt="Phoenix Tech Logo">
-                <ul class="nav-list">
+            <div class="nav-container">
+                <nav class="navbar">
+                    <img class="Logo" src="./Photos/Logo Orginal.png" alt="Phoenix Tech Logo">
+                    <button class="hamburger-menu" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-list" data-toggle="collapse" id="navlist">
+                        <li class="nav-item"><a href="#section4">Company</a></li>
+                        <li class="nav-item"><a href="#section3">Why Us</a></li>
+                        <li class="nav-item"><a href="#section5">Projects</a></li>
+                        <li class="nav-item"><a href="#footer-container">Contact</a></li>
+                    </ul>
+                </nav>
+                <ul class="navlist-mobile" id="navlistMobile">
                     <li class="nav-item"><a href="#section4">Company</a></li>
                     <li class="nav-item"><a href="#section3">Why Us</a></li>
                     <li class="nav-item"><a href="#section5">Projects</a></li>
                     <li class="nav-item"><a href="#footer-container">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </section>
         <section id="section2">
         <img class="img2" src="/Photos/2nd page img.png"/>
@@ -93,8 +100,7 @@
         <div class="socialicons">
             <a href="https://www.facebook.com/phoenix.tech.pvt.ltd?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://instagram.com/phoenix_tech_pvt.ltd_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-threads"></i></a>
+            
             <a href="https://www.linkedin.com/company/phoenix-tech-pvt-ltd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             
         </div>
@@ -111,5 +117,11 @@
         <p>Copyright &copy;2023; Designed by <span class="designer">Phoenix Tech Pvt.Ltd</span></p>
     </div>
     </footer>
+    <script>
+        document.getElementById("hamburger").onclick = () => {
+            
+            document.getElementById("navlistMobile").classList.toggle("navlist-toggle");
+        }
+    </script>
 </body>
 </html>
